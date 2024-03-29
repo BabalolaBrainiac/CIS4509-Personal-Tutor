@@ -100,3 +100,9 @@ export const ImageFileFilter = (req, file, callback) => {
     }
     callback(null, true);
 };
+
+export enum USER_ROLE  {
+    TUTOR = "TUTOR",
+    STUDENT = "STUDENT",
+    ADMIN = "ADMIN"
+}
