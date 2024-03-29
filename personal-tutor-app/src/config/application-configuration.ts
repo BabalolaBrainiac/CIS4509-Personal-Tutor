@@ -58,8 +58,6 @@ export const ApplicationConfiguration = {
         .get('PAYLOAD_ENCRYPTION_SECRET')
         .required()
         .asString(),
-
-
 };
 
 //Helper Configurations
