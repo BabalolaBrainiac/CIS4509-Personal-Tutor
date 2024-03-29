@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fc6d379-c6fa-440e-a53d-7e7cdd5a7fdc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/personal-tutor-app/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/personal-tutor-app/Dockerfile" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/personal-tutor-app/src/config/typeorm.config.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/personal-tutor-app/src/user/user.repository.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/personal-tutor-app/.env" beforeDir="false" afterPath="$PROJECT_DIR$/personal-tutor-app/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/personal-tutor-app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/personal-tutor-app/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/personal-tutor-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/personal-tutor-app/package-lock.json" afterDir="false" />
@@ -36,6 +38,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dockerfile" />
+      </list>
+    </option>
   </component>
   <component name="FormatOnSaveOptions">
     <option name="myRunOnSave" value="true" />
@@ -94,6 +103,7 @@
       <recent name="$PROJECT_DIR$/personal-tutor-app/src/schedule" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/personal-tutor-app" />
       <recent name="$PROJECT_DIR$/personal-tutor-app/src" />
     </key>
   </component>
@@ -129,7 +139,7 @@
       <updated>1697049889037</updated>
       <workItem from="1707989864868" duration="2996000" />
       <workItem from="1710511112949" duration="2454000" />
-      <workItem from="1711716908129" duration="2531000" />
+      <workItem from="1711716908129" duration="4392000" />
     </task>
     <servers />
   </component>
