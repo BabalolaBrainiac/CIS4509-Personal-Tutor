@@ -2,29 +2,55 @@ import { Injectable } from '@nestjs/common';
 import { UserRepository } from './user.repository';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
-
+import { UserEntity } from './entities/user.entity';
+import { USER_ROLE } from 'src/constants/main.constants';
+import { PasswordHelper } from 'src/helpers/password-helper';
+import {mongoIdToString, stringToMongoId } from 'src/helpers/mongo-id.helper';
+import { ObjectId } from 'typeorm';
 
 @Injectable()
 export class UserService {
 
   private readonly userRepository : UserRepository
-  create(createUserDto: CreateUserDto) {
-    return 'This action adds a new student';
+  async create(createUserDto: CreateUserDto): Promise<UserEntity> {
+
+    var newUserId = new ObjectId()
+    PasswordHelper.encryptPassword(createUserDto.password)
+
+    if(createUserDto.role == USER_ROLE.STUDENT) {
+      
+      createUserDto._id = newUserId
+
+      const tutor = await this.returnRandomAvailablePersonalTutor(createUserDto.department, newUserId.toString())
+      
+      createUserDto.personalTutor = tutor._id
+      //Create function to assign personal tutor
+    }
+    return await this.userRepository.createStudent(createUserDto);
   }
 
-  findAll() {
-    return `This action returns all student`;
+  async findAll() {
+    return await this.userRepository.getAllUsers()
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} student`;
+  async findAllByRole(role: USER_ROLE) {
+    return await this.userRepository.getAllUsersByRole(role)
   }
 
-  update(id: number, updateUserDto: UpdateUserDto) {
-    return `This action updates a #${id} student`;
+  findOne(id: string) {
+    return this.userRepository.getSingleUser(id);
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} student`;
+  update(id: string, updateUserDto: UpdateUserDto) {
+    return this.userRepository.updateUser(id, updateUserDto);
+  }
+
+  remove(id: string) {
+    return this.userRepository.removeUser(id);
+  }
+
+  async returnRandomAvailablePersonalTutor(department: string, studentId: string): Promise<UserEntity> {
+
+    return await this.userRepository.returnTutorsAvailableToBeAssigned(department, studentId)
   }
 }

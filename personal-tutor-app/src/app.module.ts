@@ -12,6 +12,7 @@ import * as c from 'winston';
 import {format, level, transports} from "./config/logger.config";
 import {WinstonUtils} from "./constants/main.constants";
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { MeetingsModule } from './meetings/meetings.module';
 import typeOrmCustomerAsyncConfig from './config/typeorm.config';
 
 
@@ -37,6 +38,7 @@ import typeOrmCustomerAsyncConfig from './config/typeorm.config';
                 new c.transports.File({filename: 'rejections.log'}),
             ],
         }),
+        MeetingsModule,
 
     ],
     controllers: [AppController],

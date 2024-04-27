@@ -7,11 +7,11 @@ import {
     CreateDateColumn,
     Entity,
     Index,
+    ObjectId,
     ObjectIdColumn,
     OneToMany,
     UpdateDateColumn,
 } from 'typeorm';
-import { Types } from 'mongoose';
 import { USER_ROLE } from 'src/constants/main.constants';
 
 const uuid = require('uuid').v4;
@@ -20,7 +20,7 @@ const uuid = require('uuid').v4;
 export class UserEntity {
 
     @ObjectIdColumn()
-    _id: Types.ObjectId;
+    _id: ObjectId;
 
     @ApiPropertyOptional({
         description: 'first name',
@@ -61,4 +61,27 @@ export class UserEntity {
     })
     @Column('enum', { unique: false, nullable: false })
     role: USER_ROLE;
+
+    @ApiPropertyOptional({
+        description: 'Password',
+        nullable: true,
+        example: 'Password',
+    })
+    @Column('varchar', { unique: false, nullable: true })
+    password: string;
+
+    @ApiPropertyOptional({
+        description: 'Password',
+        nullable: true,
+        example: 'Password',
+    })
+    @Column('array', { nullable: true })
+    students: [ObjectId];
+
+    @Column('varchar', { nullable: true })
+    personalTutor: ObjectId;
+
+    @Column('varchar', { nullable: true })
+    department: string;
+    
 }
