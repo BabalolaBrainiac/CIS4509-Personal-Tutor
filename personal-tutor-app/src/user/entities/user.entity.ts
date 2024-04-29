@@ -76,7 +76,7 @@ export class UserEntity {
         example: 'Password',
     })
     @Column('array', { nullable: true })
-    students: [ObjectId];
+    students: ObjectId[];
 
     @Column('varchar', { nullable: true })
     personalTutor: ObjectId;
