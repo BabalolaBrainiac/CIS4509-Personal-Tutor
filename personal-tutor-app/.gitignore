@@ -47,3 +47,5 @@ lerna-debug.log*
 /generate-super-admin-user.js
 /start-db.sh
 /rejections.log
+
+.idea
