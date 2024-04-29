@@ -2,7 +2,10 @@ import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/commo
 import { TutorService } from './tutor.service';
 import { CreateTutorDto } from './dto/create-tutor.dto';
 import { UpdateTutorDto } from './dto/update-tutor.dto';
+import { ApiTags } from '@nestjs/swagger';
 
+
+@ApiTags('Tutor')
 @Controller('tutor')
 export class TutorController {
   constructor(private readonly tutorService: TutorService) {}
