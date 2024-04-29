@@ -7,8 +7,8 @@ export const ApplicationConfiguration = {
         .get('APPLICATION_ENVIRONMENT')
         .required()
         .asString(),
-    APPLICATION_BASE: env.get('APPLICATION_BASE').required().asString(),
-    APPLICATION_PORT: env.get('APPLICATION_PORT').required().asPortNumber(),
+    APPLICATION_BASE: "0.0.0",
+    APPLICATION_PORT: process.env.PORT || 3000,
     DB_HOST: env.get('DB_HOST').required().asString(),
     DB_PORT: env.get('DB_PORT').required().asPortNumber(),
     DB_USER: env.get('DB_USER').asString(),

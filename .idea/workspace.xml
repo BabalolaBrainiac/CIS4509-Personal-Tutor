@@ -5,24 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fc6d379-c6fa-440e-a53d-7e7cdd5a7fdc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/personal-tutor-app/src/helpers/mongo-id.helper.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/personal-tutor-app/src/helpers/password-helper.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/personal-tutor-app/src/meetings/dto/create-meeting.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/personal-tutor-app/src/meetings/dto/update-meeting.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/personal-tutor-app/src/meetings/entities/meeting.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/personal-tutor-app/src/meetings/meetings.controller.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/personal-tutor-app/src/meetings/meetings.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/personal-tutor-app/src/meetings/meetings.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/personal-tutor-app/src/meetings/meetings.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/personal-tutor-app/src/meetings/meetings.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/personal-tutor-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/personal-tutor-app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/personal-tutor-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/personal-tutor-app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/personal-tutor-app/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/personal-tutor-app/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/personal-tutor-app/src/user/dto/create-user.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/personal-tutor-app/src/user/dto/create-user.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/personal-tutor-app/src/user/entities/user.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/personal-tutor-app/src/user/entities/user.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/personal-tutor-app/src/user/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/personal-tutor-app/src/user/user.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/personal-tutor-app/src/user/user.repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/personal-tutor-app/src/user/user.repository.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/personal-tutor-app/src/user/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/personal-tutor-app/src/user/user.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +23,7 @@
     <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/personal-tutor-app" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="02guy8qo" />
@@ -112,7 +95,9 @@
       </method>
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile" />
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
   </component>
@@ -135,6 +120,7 @@
       <workItem from="1710511112949" duration="2454000" />
       <workItem from="1711716908129" duration="9709000" />
       <workItem from="1713705153784" duration="4521000" />
+      <workItem from="1714369996245" duration="1322000" />
     </task>
     <servers />
   </component>
