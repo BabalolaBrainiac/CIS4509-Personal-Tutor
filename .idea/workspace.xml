@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fc6d379-c6fa-440e-a53d-7e7cdd5a7fdc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-    </list>
+    <list default="true" id="2fc6d379-c6fa-440e-a53d-7e7cdd5a7fdc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,7 +118,7 @@
       <workItem from="1710511112949" duration="2454000" />
       <workItem from="1711716908129" duration="9709000" />
       <workItem from="1713705153784" duration="4521000" />
-      <workItem from="1714369996245" duration="1322000" />
+      <workItem from="1714369996245" duration="1480000" />
     </task>
     <servers />
   </component>
